@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스</title>
+
+    <style>
+        body { background-color:#ffeead; margin:10px; }
+        .container { border:5px solid #ffcc5c; display:flex; justify-content:right; flex-wrap:wrap; }
+        .container div { 
+            padding:10px; 
+            text-align:center; 
+            font-size:2em; /* em은 기존 폰트사이즈(16px이 기본) 2배 */
+            color:#ffeead; 
+        }
+        .home { 
+            background-color:#96ceb4; flex:1; order:2; margin-right:auto; 
+        }
+        .search { 
+            background-color:#ff6f69; flex:3; order:1; 
+        }
+        .logout { 
+            background-color:skyblue; flex:1; order:3; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </div>
+</body>
+</html>
